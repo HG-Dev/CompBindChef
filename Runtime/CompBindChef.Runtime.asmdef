@@ -1,6 +1,6 @@
 {
     "name": "CompBindChef.Runtime",
-    "rootNamespace": "CompBindChef",
+    "rootNamespace": "HG.CompBindChef",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

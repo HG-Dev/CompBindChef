@@ -1,6 +1,6 @@
 {
     "name": "CompBindChef.Editor",
-    "rootNamespace": "CompBindChef.Editor",
+    "rootNamespace": "HG.CompBindChef.Editor",
     "references": [
         "CompBindChef.Runtime"
     ],
