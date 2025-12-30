@@ -1,0 +1,24 @@
+{
+  "name": "com.hgdev.compbindchef",
+  "version": "0.1.0",
+  "displayName": "CompBindChef",
+  "description": "A system for generating model-to-Unity component bindings using \"recipe\" components. In other words: data binding in the scene hierarchy!",
+  "unity": "2020.1",
+  "keywords": [
+    "binding",
+    "data-binding",
+    "component",
+    "model"
+  ],
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
+  "author": {
+    "name": "HG-Dev",
+    "url": "https://github.com/HG-Dev/CompBindChef"
+  },
+    "repository": {
+    "url": "https://github.com/HG-Dev/CompBindChef.git",
+    "type": "git"
+  }
+}
