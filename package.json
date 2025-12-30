@@ -10,8 +10,15 @@
     "component",
     "model"
   ],
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  },
   "author": {
     "name": "HG-Dev",
     "url": "https://github.com/HG-Dev/CompBindChef"
+  },
+    "repository": {
+    "url": "https://github.com/HG-Dev/CompBindChef.git",
+    "type": "git"
   }
 }
