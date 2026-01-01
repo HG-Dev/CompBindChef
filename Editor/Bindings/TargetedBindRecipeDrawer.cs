@@ -197,6 +197,7 @@ namespace HG.CompBindChef.Editor.Bindings
                 
                 if (members.Fields.TryGetValue(valueType, out var fields))
                 {
+                    menu.AddDisabledItem(new GUIContent($"{typeDisplayLabel}/Fields"));
                     menu.AddSeparator($"{typeDisplayLabel}/Fields");
                     foreach (var field in fields)
                         menu.AddItem(new GUIContent($"{typeDisplayLabel}/{field.Name}"),
@@ -205,6 +206,7 @@ namespace HG.CompBindChef.Editor.Bindings
                 }
                 if (members.Properties.TryGetValue(valueType, out var properties))
                 {
+                    menu.AddDisabledItem(new GUIContent($"{typeDisplayLabel}/Properties"));
                     menu.AddSeparator($"{typeDisplayLabel}/Properties");
                     foreach (var property in properties)
                         menu.AddItem(new GUIContent($"{typeDisplayLabel}/{property.Name}"), props.SpSetter.stringValue == property.Name, 
@@ -218,6 +220,7 @@ namespace HG.CompBindChef.Editor.Bindings
                     : members.GetterMethods;
                 if (methodsByType.TryGetValue(valueType, out var methods))
                 {
+                    menu.AddDisabledItem(new GUIContent($"{typeDisplayLabel}/Setter Methods"));
                     menu.AddSeparator($"{typeDisplayLabel}/Setter Methods");
                     foreach (var method in methods)
                         menu.AddItem(new GUIContent($"{typeDisplayLabel}/{method.Name}"), props.SpSetter.stringValue == method.Name + "()", 
